@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LaravelProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body><nav class="navbar sticky-top navbar-light navbar-expand-lg" style="background-color: #ffa000!important">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url('/') }}">Shrimad Bhagavad Gita</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('read') }}">Read</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('contact') }}">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="{{ url('read/verseofday') }}">Verse of the day</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/garvit-joshi/Bhagavad-Gita"
+                                target="_blank">GitHub Source Code</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <button class="btn btn-outline-success login-reg" type="submit">Login</button>
+            <button class="btn btn-outline-success login-reg" type="submit">Register</button>
+        </form>
+    </div>
+</nav>
+    <section class="features-boxed"></section>
+    <section class="contact-clean" style="color: var(--bs-blue);background: url(&quot;assets/img/sribhagavadgita.jpg&quot;) center / cover no-repeat;transform-style: preserve-3d;">
+        <form style="transform-style: preserve-3d;" data-bss-recipient="99205f06aaf5884f647033c140000ca3">
+            <h2 class="text-center">Contact us</h2>
+            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+            <div class="mb-3"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+            <div class="mb-3"><button class="btn btn-primary" type="submit">send </button></div>
+        </form>
+    </section>
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="https://bootstrapstudio.io/">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="https://dashboard.heroku.com/apps">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="https://github.com/garvit-joshi/Bhagavad-Gita">GitHub</a></li>
+                        <li><a href="https://github.com/garvit-joshi/Bhagavad-Gita">Project</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3><strong>Bhagavad Gita</strong></h3>
+                    <p><strong>Bhagavad Gita</strong>, also known as the&nbsp;<strong>Gita</strong>&nbsp;-&nbsp;<em>"The Song of The Lord"</em>&nbsp;is a practical guide to one's life that guides one to re-organise their life, achieve inner peace and approach the Supreme Lord (the Ultimate Reality). It is a 700-verse text in Sanskrit which comprises chapters 23 through 40 in the Bhishma-Parva section of the&nbsp;<strong>Mahabharata</strong>.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Garvit Joshi © 2021</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+INSERT INTO `bhagavads` (`id`, `chapter`, `title`, `verse`, `shloka`, `explanation`) VALUES (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma', '1', 'धृतराष्ट्र उवाच |\r\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\r\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥1॥', 'Dhritarastra said: O Sanjaya, what did my sons and the sons of Pandu actually do when, eager for battle, they gathered together on the holy field of Kuruksetra?'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma', '2', 'सञ्जय उवाच ।\r\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा ।\r\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥2॥', 'Sanjaya said: But then, seeing the army of the Pandavas in battle array, King Duryodhana approached his teacher (Dronacharya) and spoke the following words:'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma', '3', 'पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् ।\r\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥3॥', 'O teacher, (please) see this vast army of the sons of Pandu, arrayed for battle by the son of Drupada, your intelligent disciple, Dhrishtadyumna.'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma', '4', 'अत्र शूरा महेष्वासा भीमार्जुनसमा युधि |\r\nयुयुधानो विराटश्च द्रुपदश्च महारथ: ॥4॥', 'There are in this army, heroes wielding great bows, and equal in military prowess to Bhima and Arjuna: Yuyudhana (Satyaki) and Virata, and the maharatha (great chariot-rider) Drupada;'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma\r\n', '5', 'धृष्टकेतुश्चेकितान: काशिराजश्च वीर्यवान् |\r\nपुरुजित्कुन्तिभोजश्च शैयश्च नरपुङ्गव: ॥5॥\r\nयुधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् |', 'Dhrstaketu, Cekitana, and the valiant king of Kasi (Varanasi); Purujit and Kuntibhoja, and Saibya, the choicest among men;'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma\r\n', '6', 'सौभद्रो द्रौपदेयाश्च सर्व एव महारथा: ॥6॥', 'And the chivalrous Yudhamanyu, and the valiant Uttamaujas; son of Subhadra (Abhimanyu) and the sons of Draupadi all (of whom) are, verily, maharathas.'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma', '7', 'अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम |\r\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ॥7॥', 'But, O best among the Brahmanas, please be appraised of those who are foremost among us, the principal warriors of my army. I speak of them to you by way of example.'), (NULL, '1', 'Arjuna Visada Yoga - Arjuna\'s Dilemma', '8', 'भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जय: |\r\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥8॥', '(They are:) Your venerable self, Bhisma and Karna, and Krpa who is ever victorious in battle; Asvatthama, Vikarna, Saumadatti and Jayadratha.'), (NULL, '2', 'Sankhya Yoga - Transcendental Knowledge', '1', 'सञ्जय उवाच |\r\nतं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् |\r\nविषीदन्तमिदं वाक्यमुवाच मधुसूदन: ॥1॥', 'Sanjaya said: To him who had been thus filled with pity, whose eyes were filled with tears and showed distress, and who was sorrowing, Madhusudana uttered these words:'), (NULL, '2', 'Sankhya Yoga - Transcendental Knowledge', '2', 'श्रीभगवानुवाच |\r\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् |\r\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन ॥2॥\r\n\r\n', 'The Blessed Lord said: O Arjuna, how has this infatuation overtaken you at this odd hour? It is shunned by noble souls; neither will it bring heaven, nor fame to you.'), (NULL, '2', 'Sankhya Yoga - Transcendental Knowledge', '3', 'क्लैब्यं मा स्म गम: पार्थ नैतत्तवय्युपपद्यते |\r\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥3॥', 'O Partha, yield not to unmanliness. This does not befit you. O scorcher of foes, arise, giving up the petty weakness of the heart.'), (NULL, '2', 'Sankhya Yoga - Transcendental Knowledge', '4', 'अर्जुन उवाच |\r\nकथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन |\r\nइषुभि: प्रतियोत्स्यामि पूजार्हावरिसूदन ॥4॥', 'Arjuna said: O Madhusudana, O destroyer of enemies, how can I fight with arrows in battle against Bhisma and Drona who are worthy of adoration?'), (NULL, '2', 'Sankhya Yoga - Transcendental Knowledge', '5', 'गुरूनहत्वा हि महानुभावान्\r\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके |\r\nहत्वार्थकामांस्तु गुरूनिहैव\r\nभुञ्जीय भोगान् रुधिरप्रदिग्धान् ॥5॥', 'Rather than killing the noble-minded elders, it is better in this world to live even on alms. But, by killing the elders we shall only be enjoying here the pleasures of wealth and desirable things drenched in blood.');
