@@ -1,6 +1,6 @@
 # Bhagavad-Gita
 
-Laravel Project
+webdev backend Project
 
-Hosted in [Heroku](http://bhagavad--gita.herokuapp.com/)
+
 
